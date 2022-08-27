@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="only light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Вакансии</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+<script defer="defer" src="./assets/scripts/main.js"></script><link href="./assets/styles/main..css" rel="stylesheet"></head>
+
+<body>
+    <header class="header" style="box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);">
+        <div class="container">
+            <div class="header__wrap">
+                <img src="assets/img/logo..svg" alt="" class="header__logo">
+                <span class="header__logo-desc">Комплексные поставки для HoReCa</span>
+            </div>
+            <div class="header__wrap">
+                <a href="" class="header__phone-btn btn-transparent">8 (812) 701-02-16</a>
+                <a href="" class="header__order-btn btn">Сделать заказ</a>
+                <div class="burger-box">
+                    <div class="burger__item"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header__overlay">
+            <nav class="header__nav">
+                <button class="header__close"></button>
+                <ul class="header__nav__list">
+                    <li class="header__nav__list__item"><a href="#">КАТАЛОГ</a></li>
+                    <li class="header__nav__list__item"><a href="#">СОТРУДНИЧЕСТВО</a></li>
+                    <li class="header__nav__list__item"><a href="#">ПРЕИМУЩЕСТВА</a></li>
+                    <li class="header__nav__list__item"><a href="#">НАШИ ПАРТНЕРЫ</a></li>
+                    <li class="header__nav__list__item"><a href="#">ВАКАНСИИ</a></li>
+                    <li class="header__nav__list__item"><a href="#">КОНТАКТЫ</a></li>
+                    <a href="" class="header__phone-btn btn-transparent">8 (812) 701-02-16</a>
+                    <a href="" class="header__order-btn btn">Сделать заказ</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="job">
+        <section class="job-title">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <a href="#" class="breadcrumbs__link">Главная</a>
+                    <a href="#" class="breadcrumbs__link">Акции</a>
+                </div>
+            </div>
+            <div class="container">
+                <h1 class="job-title__header">Карьера в РБД</h1>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h2 class="about__headline page-header">О компании</h2>
+                <div class="about__wrapper">
+                    <p class="about__text">
+                        Более 20 лет РБД ведет профессиональную деятельность в сфере дистрибьюции продуктов питания, складского управления и логистики полного цикла.
+                        <br><br>
+                        В данный момент мы — один из ключевых участников рынка комплексных поставок продуктов питания в России. Компания является эксклюзивным представителем многих отечественных и зарубежных  роизводителей в разных продуктовых группах. Портфель поставщиков включает лидеров рынка из многих стран мира. Мы предоставляем клиентам широкий ассортимент и высочайший уровень сервиса. Точность наших поставок гарантированно превышает 99%.
+                        <br><br>
+                        Мы осуществляем адресную доставку по СЗФО и ЦФО со складов в Санкт-Петербурге и Москве благодаря собственному автопарку. Наша логистика покрывает всю европейскую и центральную часть России, а также ЮФО, УФО, СФО. Также мы доставляем продукцию в страны ближнего зарубежья. Для обеспечения качественных процессов приемки, кросс-докинга, хранения и комплектации товаров используем только современные мультирежимные складские комплексы. Наши склады успешно проходят регулярные международные аудиты.
+                        <br><br>
+                        Клиенты РБД — это компании и предприниматели от ключевых игроков сегмента HoReCa федерального 
+                        и регионального значения до отдельно стоящих кондитерских, пекарен и производств.
+                        <br><br>
+                        Мы успешная, стабильная и динамично развивающаяся компания с репутацией и историей, которые заслуживают уважения и доверия.                        
+                    </p>
+                    <div class="invite__container">
+                        <div class="invite__icon"><img src="assets/img/invite-icon..svg" alt=""></div>
+                        <span class="invite__desc">Наша цель — забота о каждом сотруднике. Мы с удовольствием предоставляем интересные задачи, достойную заработную плату с компенсационным пакетом, а также комфортные условия работы.</span>
+                        <a href="" class="invite__link btn">наши вакансии</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="advantages__headline page-header">Преимущества</h2>
+                <div class="advantages__wrapper">
+                    <div class="advantages__controlls">
+                        <button class="advantages__controll page__slider-controll advantages-prev"><img src="assets/img/slider-arrow..svg" alt=""></button>
+                        <button class="advantages__controll page__slider-controll advantages-next"><img src="assets/img/slider-arrow..svg" alt=""></button>
+                    </div>
+                    <div class="advantages__slider">
+    
+                        <div class="advantages__slide">
+                            <div class="advantages__slide__overlay">
+                                <div class="advantages__slide__icon">
+                                    <img src="assets/img/avt1..svg" alt="">
+                                </div>
+                                <span class="advantages__slide__desc">Оперативная обработка заказов и бесперебойная поставка продукции</span>
+                            </div>
+                            
+                            <div class="advantages__slide__icon">
+                                <img src="assets/img/avt1..svg" alt="">
+                            </div>
+                            <span class="advantages__slide__desc">Оперативная обработка заказов и бесперебойная поставка продукции</span>
+                        </div>
+    
+                        <div class="advantages__slide">
+                            <div class="advantages__slide__overlay">
+                                <div class="advantages__slide__icon">
+                                    <img src="assets/img/avt2..svg" alt="">
+                                </div>
+                                <span class="advantages__slide__desc">Удобное расположение склада в черте города и возможность самовывоза</span>
+                            </div>
+                            
+                            <div class="advantages__slide__icon">
+                                <img src="assets/img/avt2..svg" alt="">
+                            </div>
+                            <span class="advantages__slide__desc">Удобное расположение склада в черте города и возможность самовывоза</span>
+                        </div>
+    
+                        <div class="advantages__slide">
+                            <div class="advantages__slide__overlay">
+                                <div class="advantages__slide__icon">
+                                    <img src="assets/img/avt3..svg" alt="">
+                                </div>
+                                <span class="advantages__slide__desc">Минимальная сумма
+                                    заказа 3 500 ₽</span>
+                            </div>
+                            
+                            <div class="advantages__slide__icon">
+                                <img src="assets/img/avt3..svg" alt="">
+                            </div>
+                            <span class="advantages__slide__desc">Минимальная сумма
+                                заказа 3 500 ₽</span>
+                        </div>
+    
+                        <div class="advantages__slide">
+                            <div class="advantages__slide__overlay">
+                                <div class="advantages__slide__icon">
+                                    <img src="assets/img/avt4..svg" alt="">
+                                </div>
+                                <span class="advantages__slide__desc">Персональный
+                                    менеджер</span>
+                            </div>
+                            
+                            <div class="advantages__slide__icon">
+                                <img src="assets/img/avt4..svg" alt="">
+                            </div>
+                            <span class="advantages__slide__desc">Персональный
+                                менеджер</span>
+                        </div>
+    
+                        <div class="advantages__slide">
+                            <div class="advantages__slide__overlay">
+                                <div class="advantages__slide__icon">
+                                    <img src="assets/img/avt1..svg" alt="">
+                                </div>
+                                <span class="advantages__slide__desc">Оперативная обработка заказов и бесперебойная поставка продукции</span>
+                            </div>
+                            
+                            <div class="advantages__slide__icon">
+                                <img src="assets/img/avt1..svg" alt="">
+                            </div>
+                            <span class="advantages__slide__desc">Оперативная обработка заказов и бесперебойная поставка продукции</span>
+                        </div>
+    
+                        <div class="advantages__slide">
+                            <div class="advantages__slide__overlay">
+                                <div class="advantages__slide__icon">
+                                    <img src="assets/img/avt1..svg" alt="">
+                                </div>
+                                <span class="advantages__slide__desc">Оперативная обработка заказов и бесперебойная поставка продукции</span>
+                            </div>
+                            
+                            <div class="advantages__slide__icon">
+                                <img src="assets/img/avt1..svg" alt="">
+                            </div>
+                            <span class="advantages__slide__desc">Оперативная обработка заказов и бесперебойная поставка продукции</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+           </section>   
+        <section class="vacancy-offers">
+            <div class="container">
+                <h2 class="vacancy-offers__headline page-header">Вакансии</h2>
+                <div class="vacancy-offers__wrapper">
+                    <div class="vacancy-offers__wrapper__items">
+                        <div class="vacancy-offers__item">
+                            <h3 class="vacancy-offers__item__header">Менеджер по продажам (продукты питания)</h3>
+                            <span class="vacancy-offers__item__price">от 80 000 до 120 000 ₽ на руки</span>
+                            <p class="vacancy-offers__item__text">
+                                ДОЛЖНОСТНЫЕ ОБЯЗАННОСТИ:
+                                <br><br>
+                                расширение клиентской базы в своем сегменте;
+                                выполнение планов продаж;
+                                оптимизация ассортимента Компании у клиентов (расширение ассортиментной 
+                                матрицы, ротация текущего ассортимента с целью увеличения продаж);
+                                проведение переговоров и презентаций продукции;
+                                контроль дебиторской задолженности;
+                                выстраивание долгосрочных отношений с клиентами.                           
+                            </p>
+                            <p class="vacancy-offers__item__text">
+                                ТРЕБОВАНИЯ К КАНДИДАТУ:
+                                <br><br>
+                                опыт работы на аналогичной должности от 1 года;
+                                готовность к разъездной работе (примерно 50% рабочего времени);
+                                наличие клиентской базы в сегменте HoReCa будет преимуществом;
+                                опытный пользователь ПК (MS Office, 1С);
+                                отличные навыки ведения переговоров;
+                                проактивная жизненная позиция и ориентация на результат.
+                                Мы рассмотрим Ваше резюме в течение двух рабочих дней и будем рады 
+                                пригласить Вас на собеседование)                            
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="invite__container">
+                        <div class="invite__icon"><img src="assets/img/invite-icon..svg" alt=""></div>
+                        <span class="invite__desc">
+                            Полный день с 10 до 18 часов <br>
+                            Оформление согласно ТК РФ <br>
+                            Офис: ст.м. Улица Дыбенко <br>                           
+                        </span>
+                        <div class="invite__link__wrap">
+                        <a href="javascript:void();" class="invite__link btn" data-modal="vacancy">Откликнуться</a>
+                        <a href="#" class="invite__social"><img src="assets/img/whatsapp..png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__logo-wrap">
+                    <img src="assets/img/logo-footer..svg" alt="" class="header__logo">
+                    <span class="header__logo-desc">Комплексные поставки для HoReCa</span>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav__list">
+                        <li class="footer__nav__list__item _active"><a href="">КАТАЛОГ</a></li>
+                        <li class="footer__nav__list__item"><a href="">СОТРУДНИЧЕСТВО</a></li>
+                        <li class="footer__nav__list__item"><a href="">ПРЕИМУЩЕСТВА</a></li>
+                        <li class="footer__nav__list__item"><a href="">ВАКАНСИИ</a></li>
+                        <li class="footer__nav__list__item"><a href="">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <span class="copy">© «РБД», 2022</span>
+                <a href="" class="privacy__link">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal__wrapper" id="order" style="display: none;">
+        <form action="" class="modal__form">
+            <button class="close__modal"></button>
+            <h5 class="modal__form__headline">Сделать заказ</h5>
+            <p class="modal__form__text">
+                Прием заказов осуществляется: <br>
+                пт-пт: 9:00 – 18:00 <br>
+                сб: 9:00 – 13:30 <br>
+                <br><br>
+                При оформлении заказа до 16:30 (в сб до 13:30) — получение на следующий день, позднее — доставка через день.                
+            </p>
+            <input type="text" name="name" placeholder="Ваше имя" class="modal__form__input">
+            <input type="text" name="phone" placeholder="Телефон" class="modal__form__input">
+            <button class="modal__form__btn btn">Отправить</button>
+        </form>
+    </div>
+    <div class="modal__wrapper" id="write" style="display: none;">
+        <form action="" class="modal__form">
+            <button class="close__modal"></button>
+            <h5 class="modal__form__headline">Напишите нам</h5>
+            <input type="text" name="name" placeholder="Ваше имя" class="modal__form__input">
+            <input type="text" name="phone" placeholder="Телефон" class="modal__form__input">
+            <input type="text" name="comment" placeholder="Комментарий" class="modal__form__input">
+            <button class="modal__form__btn btn">Отправить</button>
+        </form>
+    </div>  
+    <div class="modal__wrapper" id="vacancy" style="display: none;">
+        <form action="" class="modal__form">
+            <button class="close__modal"></button>
+            <h5 class="modal__form__headline">Откликнуться на вакансию</h5>
+            <input type="text" name="name" placeholder="Ваше имя" class="modal__form__input">
+            <input type="text" name="phone" placeholder="Телефон" class="modal__form__input">
+            <input type="text" name="comment" placeholder="Вакансия" class="modal__form__input">
+            <button class="modal__form__btn btn">Отправить</button>
+        </form>
+    </div>  
+</body>
+
+</html>
