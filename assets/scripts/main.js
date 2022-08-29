@@ -11856,7 +11856,13 @@ $(document).ready(function () {
                     slidesToShow: 2,
                 }
             },
-
+            {
+                breakpoint: 681,
+                settings: {
+                    slidesToShow: 2,
+                    dots: true,
+                }
+            },
         ]
     });
     $('.advantages__slider').slick({
@@ -11908,6 +11914,7 @@ $(document).ready(function () {
                 breakpoint: 681,
                 settings: {
                     slidesToShow: 2,
+                    dots: true,
                 }
             },
         ]
