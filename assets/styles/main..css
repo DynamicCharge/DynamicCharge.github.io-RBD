@@ -1045,7 +1045,7 @@ main {
     justify-content: start;
     align-items: stretch;
     flex-direction: row-reverse;
-    min-width: 345px; }
+    min-width: 470px; }
   .catalog .catalog__list__scroll {
     width: 10px;
     position: relative;
@@ -1060,7 +1060,7 @@ main {
   .catalog .catalog__list {
     height: 700px;
     overflow-y: hidden;
-    padding-right: 40px; }
+    padding-right: 45px; }
   .catalog .cli-wr:not(:last-child) {
     margin-bottom: 20px; }
   .catalog .catalog__list__item {
@@ -1084,7 +1084,7 @@ main {
   .catalog .catalog__content__wrapper {
     max-width: 1155px;
     width: 100%;
-    margin-left: 115px; }
+    margin-left: 95px; }
   .catalog .catalog__content__img-box {
     width: 100%;
     overflow: hidden;
@@ -1279,6 +1279,18 @@ main {
     height: auto; }
     .advantages .advantages__slider .slick-list {
       overflow: visible; }
+  .advantages .slick-track .slick-active .advantages__slide__overlay {
+    border-radius: 20px 20px 0 20px;
+    left: -3px; }
+  .advantages .slick-track .slick-active + .slick-active .advantages__slide__overlay {
+    border-radius: 20px 20px 0 0;
+    left: 0px; }
+  .advantages .slick-track .slick-active + .slick-active + .slick-active + .slick-active .advantages__slide__overlay {
+    border-radius: 20px 20px 0 0;
+    left: 3px; }
+  .advantages .slick-track .slick-active + .slick-active + .slick-active + .slick-active + .slick-active .advantages__slide__overlay {
+    border-radius: 20px 20px 20px 0;
+    left: 3px; }
   .advantages .advantages__slide {
     padding: 40px 21px 25px;
     box-sizing: border-box;
@@ -1288,13 +1300,16 @@ main {
     transition: all .3s; }
     .advantages .advantages__slide.slick-active {
       opacity: 1; }
+    .advantages .advantages__slide.slick-active:nth-child(1) .advantages__slide__overlay {
+      border-radius: 20px 20px 0 20px; }
     .advantages .advantages__slide:hover .advantages__slide__overlay {
       opacity: 1; }
   .advantages .advantages__slide__overlay {
+    pointer-events: none;
     opacity: 0;
     transition: all .3s;
     position: absolute;
-    bottom: 1px;
+    bottom: -3px;
     left: 0;
     width: 100%;
     padding: 52px 21px 60px;
@@ -1771,6 +1786,20 @@ main {
       transform: rotate(-45deg); }
 
 @media screen and (max-width: 1440px) {
+  .catalog .catalog__content__wrapper {
+    margin-left: 30px; }
+  .advantages .slick-track .slick-active .advantages__slide__overlay {
+    border-radius: 20px 20px 0 20px;
+    left: -3px; }
+  .advantages .slick-track .slick-active + .slick-active .advantages__slide__overlay {
+    border-radius: 20px 20px 0 0;
+    left: 0px; }
+  .advantages .slick-track .slick-active + .slick-active + .slick-active + .slick-active .advantages__slide__overlay {
+    border-radius: 20px 20px 20px 0 !important;
+    left: 3px; }
+  .advantages .slick-track .slick-active + .slick-active + .slick-active + .slick-active + .slick-active .advantages__slide__overlay {
+    border-radius: 20px 20px 0 0;
+    left: 3px; }
   .job-title {
     background-position: center; }
   .terms .terms__list__item span {
