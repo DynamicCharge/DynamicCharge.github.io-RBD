@@ -1279,6 +1279,8 @@ main {
     height: auto; }
     .advantages .advantages__slider .slick-list {
       overflow: visible; }
+  .advantages .slick-track {
+    display: flex; }
   .advantages .slick-track .slick-active .advantages__slide__overlay {
     border-radius: 20px 20px 0 20px;
     left: -3px; }
@@ -1292,6 +1294,8 @@ main {
     border-radius: 20px 20px 20px 0;
     left: 3px; }
   .advantages .advantages__slide {
+    height: auto;
+    flex: 0 0 auto;
     padding: 40px 21px 25px;
     box-sizing: border-box;
     min-height: 250px;
