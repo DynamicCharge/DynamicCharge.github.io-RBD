@@ -11176,7 +11176,7 @@ $(document).ready(function () {
                 $(this).parents('.cli-wr').find('.catalog__content').remove();
             });
             var targetHtml = target.html();
-            $(this).parents('.cli-wr').append('<div class="catalog__content" style="margin-top: 10px; display:block;" data-content="'+ dataName +'">'+targetHtml+'</div>');
+            $(this).parents('.cli-wr').append('<div class="catalog__content" style="margin-top: 20px; display:block;" data-content="'+ dataName +'">'+targetHtml+'</div>');
             
         }
         
@@ -11232,7 +11232,7 @@ $(document).ready(function () {
         ]
     });
     $('.advantages__slider').slick({
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         infinite: true,  
 
@@ -11240,12 +11240,6 @@ $(document).ready(function () {
         prevArrow: $('.advantages-prev'), 
         
         responsive: [
-            {
-                breakpoint: 1441,
-                settings: {
-                    slidesToShow: 4,
-                }
-            },
             {
                 breakpoint: 991,
                 settings: {
