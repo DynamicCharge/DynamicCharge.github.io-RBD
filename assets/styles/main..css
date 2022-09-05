@@ -1189,7 +1189,7 @@ main {
     display: block;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     /* identical to box height, or 111% */
     color: #00529C; }
@@ -1301,10 +1301,10 @@ main {
     border-radius: 20px 20px 0 0;
     left: 0px; }
   .advantages .slick-track .slick-active + .slick-active + .slick-active + .slick-active .advantages__slide__overlay {
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0 !important;
     left: 3px; }
   .advantages .slick-track .slick-active + .slick-active + .slick-active + .slick-active + .slick-active .advantages__slide__overlay {
-    border-radius: 20px 20px 20px 0;
+    border-radius: 20px 20px 20px 0 !important;
     left: 3px; }
   .advantages .advantages__slide {
     height: auto;
@@ -1554,6 +1554,12 @@ main {
   color: #00529C;
   margin-bottom: 20px; }
 
+.new__item {
+  display: flex; }
+
+.new__body {
+  flex: 1 1 auto; }
+
 .new__read {
   color: #FF7A00;
   text-decoration: underline; }
@@ -1618,7 +1624,7 @@ main {
     align-items: flex-start; }
   .about .about__text {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     /* or 120% */
     color: #00529C; }
@@ -1639,10 +1645,12 @@ main {
     padding-left: 20px; }
     .vacancy-offers .vacancy-offers__item ul li {
       font-weight: 400;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 24px;
       /* or 120% */
       color: #00529C; }
+      .vacancy-offers .vacancy-offers__item ul li::marker {
+        font-size: 13px; }
     .vacancy-offers .vacancy-offers__item ul:not(:last-child) {
       margin-bottom: 35px; }
   .vacancy-offers .vacancy-offers__item__header {
@@ -1673,12 +1681,12 @@ main {
     margin-bottom: 40px; }
   .vacancy-offers .vacancy-offers__item__text {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     /* or 120% */
     color: #00529C; }
     .vacancy-offers .vacancy-offers__item__text:not(:last-child) {
-      margin-bottom: 20px; }
+      margin-bottom: 10px; }
   .vacancy-offers .invite__container {
     border: 2px solid #00529C; }
   .vacancy-offers .invite__desc {
@@ -1751,16 +1759,31 @@ main {
     text-decoration-line: underline;
     color: rgba(255, 255, 255, 0.5); }
 
+.advantages .slick-track .slick-active .advantages__slide__overlay {
+  border-radius: 20px 20px 0 20px;
+  left: -3px; }
+
+.advantages .slick-track .slick-active + .slick-active .advantages__slide__overlay {
+  border-radius: 20px 20px 0 0;
+  left: 0px; }
+
+.advantages .slick-track .slick-active + .slick-active + .slick-active + .slick-active .advantages__slide__overlay {
+  border-radius: 20px 20px 20px 0 !important;
+  left: 3px; }
+
+.advantages .slick-track .slick-active + .slick-active + .slick-active + .slick-active + .slick-active .advantages__slide__overlay {
+  border-radius: 20px 20px 0 0;
+  left: 3px; }
+
 .modal__wrapper {
   padding: 0 !important;
   background: transparent; }
   .modal__wrapper .modal__form {
     position: relative;
     background: #FFFFFF;
-    border: 3px solid #00529C;
     border-radius: 20px;
     max-width: 480px;
-    padding: 40px 43px;
+    padding: 40px 40px;
     box-sizing: border-box; }
   .modal__wrapper .modal__form__headline {
     font-weight: 500;
@@ -1774,13 +1797,32 @@ main {
     line-height: 24px;
     /* or 133% */
     color: #00529C;
-    margin-bottom: 40px; }
+    margin-bottom: 23px; }
+  .modal__wrapper .modal__form__text-sub {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+    color: #00529C;
+    padding-left: 18px;
+    position: relative;
+    margin-bottom: 43px;
+    max-width: 324px; }
+    .modal__wrapper .modal__form__text-sub::before {
+      content: '';
+      width: 2px;
+      height: 100%;
+      background-color: #FF7A00;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0; }
   .modal__wrapper .modal__form__input {
     width: 100%;
     border: 1px solid #00529C;
     border-radius: 5px;
     outline: none;
-    padding: 13px 20px;
+    padding: 18px 20px;
     box-sizing: border-box;
     font-weight: 400;
     font-size: 18px;
@@ -1855,7 +1897,7 @@ main {
 
 @media screen and (max-width: 1230px) {
   .vacancy-offers .invite__container {
-    max-width: 100%; }
+    max-width: 400px; }
   .vacancy-offers .vacancy-offers__wrapper {
     grid-template-columns: 1fr;
     gap: 80px 0; }
@@ -1946,13 +1988,20 @@ main {
     opacity: 0; } }
 
 @media screen and (max-width: 900px) {
+  .vacancy-offers .vacancy-offers__item ul:not(:last-child) {
+    margin-bottom: 25px; }
+  .about {
+    padding: 96px 0 60px; }
   .vacancy-offers .vacancy-offers__item ul li {
     font-size: 18px;
     line-height: 24px; }
   .vacancy-offers .vacancy-offers__item__text:not(:last-child) {
     margin-bottom: 10px; }
   .vacancy-offers .vacancy-offers__item__header {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 38px;
+    max-width: 456px; }
   .vacancy-offers .vacancy-offers__headline {
     margin-bottom: 52px; }
   .about .invite__container {
@@ -2036,8 +2085,8 @@ main {
     row-gap: 40px; }
   .job-title .job-title__header {
     max-width: 268px;
-    font-size: 60px;
-    line-height: 74px; }
+    font-size: 48px;
+    line-height: 56px; }
   .container {
     padding: 0 70px; }
   .header .header__overlay {
@@ -2059,6 +2108,33 @@ main {
     line-height: 20px; } }
 
 @media screen and (max-width: 680px) {
+  .about {
+    padding-bottom: 40px; }
+  .invite__container span {
+    margin-bottom: 20px; }
+  .about .about__wrapper {
+    gap: 40px 0; }
+  .modal__wrapper .modal__form__btn {
+    max-width: 100% !important;
+    width: 100%; }
+  .modal__wrapper .modal__form__input {
+    padding: 11px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px; }
+  .modal__wrapper .modal__form__text-sub {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 22px;
+    padding-left: 18px; }
+  .fancybox-slide--html {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .modal__wrapper .modal__form__headline {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px; }
   .about .invite__container {
     padding: 40px 40px; }
   .vacancy-offers .invite__link {
@@ -2114,10 +2190,12 @@ main {
   .popular {
     padding-bottom: 70px; }
   .modal__wrapper .modal__form__text {
-    font-size: 18px;
-    line-height: 24px; }
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 22px; }
   .modal__wrapper .modal__form__headline {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    max-width: 149px; }
   .modal__wrapper .close__modal {
     top: 27px; }
   .modal__wrapper .modal__form {
@@ -2192,7 +2270,8 @@ main {
     height: 40px;
     padding: 12px 11px;
     border-radius: 10px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    box-sizing: border-box; }
   .advantages .advantages__headline {
     margin-bottom: 20px; }
   .advantages {
@@ -2278,7 +2357,7 @@ main {
   .vacancy-offers .vacancy-offers__headline {
     margin-bottom: 42px; }
   .about .about__headline {
-    padding-left: 20px; }
+    padding-left: 25px; }
     .about .about__headline::before {
       height: 60px;
       left: 0;
